@@ -1,7 +1,7 @@
 export interface ColorScheme {
   name: string;
   colors: {
-    primary: string;
+    primary: string; // Can be hex (#ffffff) or OKLCH (oklch(0.5 0.1 180))
     secondary: string;
     accent: string;
     background: string;

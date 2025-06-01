@@ -18,7 +18,33 @@ export function useColorCustomizer() {
     const savedScheme = loadColorScheme();
     if (savedScheme) {
       setCurrentScheme(savedScheme);
-      applyColorScheme(savedScheme);
+      // Check if colors are hex values (start with #) or OKLCH
+      const isHexColors = Object.values(savedScheme.colors).some(color =>
+        typeof color === 'string' && color.startsWith('#')
+      );
+
+      if (isHexColors) {
+        // Apply hex colors directly
+        const root = document.documentElement;
+        Object.entries(savedScheme.colors).forEach(([key, value]) => {
+          root.style.setProperty(`--${key}`, value);
+        });
+
+        // Update related colors for hex
+        root.style.setProperty('--primary-foreground', savedScheme.colors.background);
+        root.style.setProperty('--secondary-foreground', '#ffffff');
+        root.style.setProperty('--accent-foreground', '#ffffff');
+        root.style.setProperty('--muted-foreground', savedScheme.colors.foreground);
+        root.style.setProperty('--card', savedScheme.colors.background);
+        root.style.setProperty('--card-foreground', savedScheme.colors.foreground);
+        root.style.setProperty('--popover', savedScheme.colors.background);
+        root.style.setProperty('--popover-foreground', savedScheme.colors.foreground);
+        root.style.setProperty('--input', savedScheme.colors.muted);
+        root.style.setProperty('--ring', savedScheme.colors.primary);
+      } else {
+        // Apply OKLCH colors using the existing function
+        applyColorScheme(savedScheme);
+      }
     }
   }, []);
 

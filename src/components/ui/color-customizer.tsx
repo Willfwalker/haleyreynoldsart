@@ -7,12 +7,11 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useColorCustomizer } from '@/hooks/useColorCustomizer';
-import { hexToOklch } from '@/lib/color-utils';
+
 
 export default function ColorCustomizer() {
   const {
     isOpen,
-    createCustomScheme,
     resetToDefault,
     toggleCustomizer,
     setIsOpen,
@@ -36,17 +35,43 @@ export default function ColorCustomizer() {
   };
 
   const applyCustomColors = () => {
-    const oklchColors = {
-      primary: hexToOklch(customColors.primary),
-      secondary: hexToOklch(customColors.secondary),
-      accent: hexToOklch(customColors.accent),
-      background: hexToOklch(customColors.background),
-      foreground: hexToOklch(customColors.foreground),
-      muted: hexToOklch(customColors.muted),
-      border: hexToOklch(customColors.border),
-    };
+    // Apply colors directly as hex values instead of converting to OKLCH
+    const root = document.documentElement;
 
-    createCustomScheme('Custom', oklchColors);
+    // Apply the hex colors directly to CSS variables
+    root.style.setProperty('--primary', customColors.primary);
+    root.style.setProperty('--secondary', customColors.secondary);
+    root.style.setProperty('--accent', customColors.accent);
+    root.style.setProperty('--background', customColors.background);
+    root.style.setProperty('--foreground', customColors.foreground);
+    root.style.setProperty('--muted', customColors.muted);
+    root.style.setProperty('--border', customColors.border);
+
+    // Update related colors
+    root.style.setProperty('--primary-foreground', customColors.background);
+    root.style.setProperty('--secondary-foreground', '#ffffff');
+    root.style.setProperty('--accent-foreground', '#ffffff');
+    root.style.setProperty('--muted-foreground', customColors.foreground);
+    root.style.setProperty('--card', customColors.background);
+    root.style.setProperty('--card-foreground', customColors.foreground);
+    root.style.setProperty('--popover', customColors.background);
+    root.style.setProperty('--popover-foreground', customColors.foreground);
+    root.style.setProperty('--input', customColors.muted);
+    root.style.setProperty('--ring', customColors.primary);
+
+    // Chart colors
+    root.style.setProperty('--chart-1', customColors.primary);
+    root.style.setProperty('--chart-2', customColors.secondary);
+    root.style.setProperty('--chart-3', customColors.accent);
+    root.style.setProperty('--chart-4', customColors.secondary);
+    root.style.setProperty('--chart-5', customColors.muted);
+
+    // Save to localStorage as hex values
+    const customScheme = {
+      name: 'Custom',
+      colors: customColors
+    };
+    localStorage.setItem('rustic-color-scheme', JSON.stringify(customScheme));
   };
 
   return (
