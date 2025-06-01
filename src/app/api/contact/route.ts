@@ -40,14 +40,14 @@ export async function POST(req: NextRequest) {
     // Email to admin
     const adminEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #8B4513;">New Contact Form Submission</h2>
+        <h2 style="color: #8cb88e;">New Contact Form Submission</h2>
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Subject:</strong> ${subject}</p>
         </div>
         <div style="background-color: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
-          <h3 style="color: #8B4513;">Message:</h3>
+          <h3 style="color: #8cb88e;">Message:</h3>
           <p style="line-height: 1.6;">${message.replace(/\n/g, '<br>')}</p>
         </div>
         <p style="color: #666; font-size: 12px; margin-top: 20px;">
@@ -59,12 +59,12 @@ export async function POST(req: NextRequest) {
     // Auto-reply to customer
     const customerEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #8B4513;">Thank you for contacting Haley Reynolds Art!</h2>
+        <h2 style="color: #8cb88e;">Thank you for contacting Haley Reynolds Art!</h2>
         <p>Hi ${name},</p>
         <p>Thank you for reaching out to us. We've received your message and will get back to you within 24 hours.</p>
         
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #8B4513;">Your Message:</h3>
+          <h3 style="color: #8cb88e;">Your Message:</h3>
           <p><strong>Subject:</strong> ${subject}</p>
           <p style="line-height: 1.6;">${message.replace(/\n/g, '<br>')}</p>
         </div>

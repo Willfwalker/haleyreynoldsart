@@ -138,11 +138,11 @@ src/
 ## Customization
 
 ### Colors
-The rustic color palette is defined in `src/app/globals.css`:
-- Primary: Rich gold (`oklch(0.65 0.15 75)`)
-- Secondary: Warm brown (`oklch(0.45 0.08 50)`)
+The green color palette is defined in `src/app/globals.css`:
+- Primary: Light green (`oklch(0.85 0.08 145)`) - #A8dcab
+- Secondary: Medium green (`oklch(0.72 0.06 140)`) - #8cb88e
 - Background: Warm cream (`oklch(0.97 0.02 85)`)
-- Accent: Burnt orange (`oklch(0.6 0.12 65)`)
+- Accent: Soft green (`oklch(0.80 0.06 142)`)
 
 ### Adding Products
 Products are currently stored as mock data in `/shop/page.tsx`. In production, these would be managed through:

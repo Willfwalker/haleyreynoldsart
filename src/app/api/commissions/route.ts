@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
         </div>
         
         <div style="background-color: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
-          <h3 style="color: #8B4513;">Project Description:</h3>
+          <h3 style="color: #8cb88e;">Project Description:</h3>
           <p style="line-height: 1.6;">${description.replace(/\n/g, '<br>')}</p>
         </div>
 
@@ -111,12 +111,12 @@ export async function POST(req: NextRequest) {
     // Auto-reply to customer
     const customerEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #8B4513;">Commission Request Received!</h2>
+        <h2 style="color: #8cb88e;">Commission Request Received!</h2>
         <p>Hi ${name},</p>
         <p>Thank you for your commission request! I'm excited about the possibility of creating a custom piece for you.</p>
         
         <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #8B4513;">Your Request Summary:</h3>
+          <h3 style="color: #8cb88e;">Your Request Summary:</h3>
           <p><strong>Commission Type:</strong> ${commissionTypeLabel}</p>
           <p><strong>Budget Range:</strong> $${budget}</p>
           <p><strong>Preferred Timeline:</strong> ${timeline}</p>
@@ -124,7 +124,7 @@ export async function POST(req: NextRequest) {
         </div>
         
         <div style="background-color: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
-          <h3 style="color: #8B4513;">What's Next?</h3>
+          <h3 style="color: #8cb88e;">What&apos;s Next?</h3>
           <ul style="line-height: 1.8;">
             <li>I'll review your request within 24 hours</li>
             <li>You'll receive a detailed quote and timeline</li>

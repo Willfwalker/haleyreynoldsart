@@ -45,83 +45,83 @@
 
 :root {
   --radius: 0.625rem;
-  /* Rustic Color Palette - Warm Creams and Golds */
+  /* Green Color Palette - Fresh and Natural */
   --background: oklch(0.97 0.02 85); /* Warm cream background */
-  --foreground: oklch(0.25 0.05 45); /* Dark brown text */
+  --foreground: oklch(0.72 0.06 140); /* Medium green text */
   --card: oklch(0.98 0.015 80); /* Slightly warmer card background */
-  --card-foreground: oklch(0.25 0.05 45);
+  --card-foreground: oklch(0.72 0.06 140);
   --popover: oklch(0.98 0.015 80);
-  --popover-foreground: oklch(0.25 0.05 45);
-  /* Primary - Rich Gold */
-  --primary: oklch(0.65 0.15 75); /* Rich gold */
-  --primary-foreground: oklch(0.98 0.015 80); /* Light cream text on gold */
-  /* Secondary - Warm Brown */
-  --secondary: oklch(0.45 0.08 50); /* Warm brown */
-  --secondary-foreground: oklch(0.95 0.02 85); /* Light text on brown */
-  /* Muted - Light Brown */
-  --muted: oklch(0.85 0.03 60); /* Light brown/tan */
-  --muted-foreground: oklch(0.35 0.06 45); /* Darker brown text */
-  /* Accent - Burnt Orange */
-  --accent: oklch(0.6 0.12 65); /* Burnt orange accent */
+  --popover-foreground: oklch(0.72 0.06 140);
+  /* Primary - Light Green */
+  --primary: oklch(0.85 0.08 145); /* Light green */
+  --primary-foreground: oklch(0.98 0.015 80); /* Light cream text on green */
+  /* Secondary - Medium Green */
+  --secondary: oklch(0.72 0.06 140); /* Medium green */
+  --secondary-foreground: oklch(0.95 0.02 85); /* Light text on green */
+  /* Muted - Light Green */
+  --muted: oklch(0.90 0.04 145); /* Light green/mint */
+  --muted-foreground: oklch(0.65 0.05 140); /* Darker green text */
+  /* Accent - Soft Green */
+  --accent: oklch(0.80 0.06 142); /* Soft green accent */
   --accent-foreground: oklch(0.95 0.02 85);
   --destructive: oklch(0.577 0.245 27.325); /* Keep red for errors */
-  --border: oklch(0.8 0.04 70); /* Warm border */
-  --input: oklch(0.92 0.025 75); /* Warm input background */
-  --ring: oklch(0.65 0.15 75); /* Gold focus ring */
-  /* Chart colors in rustic palette */
-  --chart-1: oklch(0.65 0.15 75); /* Gold */
-  --chart-2: oklch(0.45 0.08 50); /* Brown */
-  --chart-3: oklch(0.6 0.12 65); /* Burnt orange */
-  --chart-4: oklch(0.55 0.1 40); /* Dark brown */
-  --chart-5: oklch(0.7 0.1 85); /* Light gold */
+  --border: oklch(0.88 0.04 145); /* Green border */
+  --input: oklch(0.92 0.025 145); /* Green input background */
+  --ring: oklch(0.85 0.08 145); /* Light green focus ring */
+  /* Chart colors in green palette */
+  --chart-1: oklch(0.85 0.08 145); /* Light green */
+  --chart-2: oklch(0.72 0.06 140); /* Medium green */
+  --chart-3: oklch(0.80 0.06 142); /* Soft green */
+  --chart-4: oklch(0.65 0.05 138); /* Dark green */
+  --chart-5: oklch(0.90 0.04 145); /* Very light green */
   --sidebar: oklch(0.95 0.025 80);
-  --sidebar-foreground: oklch(0.25 0.05 45);
-  --sidebar-primary: oklch(0.65 0.15 75);
+  --sidebar-foreground: oklch(0.72 0.06 140);
+  --sidebar-primary: oklch(0.85 0.08 145);
   --sidebar-primary-foreground: oklch(0.98 0.015 80);
-  --sidebar-accent: oklch(0.85 0.03 60);
-  --sidebar-accent-foreground: oklch(0.25 0.05 45);
-  --sidebar-border: oklch(0.8 0.04 70);
-  --sidebar-ring: oklch(0.65 0.15 75);
+  --sidebar-accent: oklch(0.90 0.04 145);
+  --sidebar-accent-foreground: oklch(0.72 0.06 140);
+  --sidebar-border: oklch(0.88 0.04 145);
+  --sidebar-ring: oklch(0.85 0.08 145);
 }
 
 .dark {
-  /* Dark Rustic Theme - Deep Browns and Warm Golds */
-  --background: oklch(0.15 0.03 40); /* Deep brown background */
+  /* Dark Green Theme - Deep Greens and Light Accents */
+  --background: oklch(0.15 0.03 140); /* Deep green background */
   --foreground: oklch(0.9 0.02 80); /* Warm cream text */
-  --card: oklch(0.2 0.04 45); /* Slightly lighter brown cards */
+  --card: oklch(0.2 0.04 140); /* Slightly lighter green cards */
   --card-foreground: oklch(0.9 0.02 80);
-  --popover: oklch(0.2 0.04 45);
+  --popover: oklch(0.2 0.04 140);
   --popover-foreground: oklch(0.9 0.02 80);
-  /* Primary - Bright Gold for dark mode */
-  --primary: oklch(0.75 0.18 80); /* Brighter gold for contrast */
-  --primary-foreground: oklch(0.15 0.03 40); /* Dark brown text on gold */
-  /* Secondary - Medium Brown */
-  --secondary: oklch(0.35 0.06 50); /* Medium brown */
+  /* Primary - Bright Green for dark mode */
+  --primary: oklch(0.85 0.08 145); /* Bright green for contrast */
+  --primary-foreground: oklch(0.15 0.03 140); /* Dark green text on light green */
+  /* Secondary - Medium Green */
+  --secondary: oklch(0.35 0.06 140); /* Medium green */
   --secondary-foreground: oklch(0.9 0.02 80); /* Light text */
-  /* Muted - Dark Brown */
-  --muted: oklch(0.25 0.04 45); /* Dark brown */
-  --muted-foreground: oklch(0.7 0.03 70); /* Muted gold text */
-  /* Accent - Warm Orange */
-  --accent: oklch(0.65 0.15 70); /* Warm orange accent */
+  /* Muted - Dark Green */
+  --muted: oklch(0.25 0.04 140); /* Dark green */
+  --muted-foreground: oklch(0.7 0.03 145); /* Muted green text */
+  /* Accent - Soft Green */
+  --accent: oklch(0.65 0.06 142); /* Soft green accent */
   --accent-foreground: oklch(0.9 0.02 80);
   --destructive: oklch(0.704 0.191 22.216); /* Keep red for errors */
-  --border: oklch(0.3 0.05 50); /* Brown border */
-  --input: oklch(0.25 0.04 45); /* Dark brown input */
-  --ring: oklch(0.75 0.18 80); /* Gold focus ring */
+  --border: oklch(0.3 0.05 140); /* Green border */
+  --input: oklch(0.25 0.04 140); /* Dark green input */
+  --ring: oklch(0.85 0.08 145); /* Light green focus ring */
   /* Dark mode chart colors */
-  --chart-1: oklch(0.75 0.18 80); /* Bright gold */
-  --chart-2: oklch(0.55 0.1 50); /* Medium brown */
-  --chart-3: oklch(0.65 0.15 70); /* Warm orange */
-  --chart-4: oklch(0.4 0.08 45); /* Dark brown */
-  --chart-5: oklch(0.8 0.12 85); /* Light gold */
-  --sidebar: oklch(0.18 0.035 42);
+  --chart-1: oklch(0.85 0.08 145); /* Bright green */
+  --chart-2: oklch(0.72 0.06 140); /* Medium green */
+  --chart-3: oklch(0.80 0.06 142); /* Soft green */
+  --chart-4: oklch(0.65 0.05 138); /* Dark green */
+  --chart-5: oklch(0.90 0.04 145); /* Very light green */
+  --sidebar: oklch(0.18 0.035 140);
   --sidebar-foreground: oklch(0.9 0.02 80);
-  --sidebar-primary: oklch(0.75 0.18 80);
-  --sidebar-primary-foreground: oklch(0.15 0.03 40);
-  --sidebar-accent: oklch(0.25 0.04 45);
+  --sidebar-primary: oklch(0.85 0.08 145);
+  --sidebar-primary-foreground: oklch(0.15 0.03 140);
+  --sidebar-accent: oklch(0.25 0.04 140);
   --sidebar-accent-foreground: oklch(0.9 0.02 80);
-  --sidebar-border: oklch(0.3 0.05 50);
-  --sidebar-ring: oklch(0.75 0.18 80);
+  --sidebar-border: oklch(0.3 0.05 140);
+  --sidebar-ring: oklch(0.85 0.08 145);
 }
 
 @layer base {
@@ -134,7 +134,7 @@
   }
 }
 
-/* Custom Rustic Styles */
+/* Custom Green Styles */
 @layer components {
   .rustic-gradient {
     background: linear-gradient(135deg, oklch(0.97 0.02 85) 0%, oklch(0.95 0.025 80) 100%);
@@ -143,29 +143,29 @@
   .rustic-card {
     @apply bg-card border border-border rounded-lg shadow-sm;
     background: oklch(0.98 0.015 80);
-    box-shadow: 0 2px 8px oklch(0.8 0.04 70 / 0.1);
+    box-shadow: 0 2px 8px oklch(0.88 0.04 145 / 0.1);
   }
 
   .rustic-button-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
-    background: oklch(0.65 0.15 75);
-    box-shadow: 0 2px 4px oklch(0.45 0.08 50 / 0.2);
+    background: oklch(0.85 0.08 145);
+    box-shadow: 0 2px 4px oklch(0.72 0.06 140 / 0.2);
   }
 
   .rustic-button-secondary {
     @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors;
-    background: oklch(0.45 0.08 50);
+    background: oklch(0.72 0.06 140);
   }
 
   .rustic-text-gold {
-    color: oklch(0.65 0.15 75);
+    color: oklch(0.85 0.08 145);
   }
 
   .rustic-text-brown {
-    color: oklch(0.35 0.06 45);
+    color: oklch(0.72 0.06 140);
   }
 
   .rustic-border {
-    border-color: oklch(0.8 0.04 70);
+    border-color: oklch(0.88 0.04 145);
   }
 }
