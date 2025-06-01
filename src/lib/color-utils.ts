@@ -15,13 +15,13 @@ export const defaultColorSchemes: ColorScheme[] = [
   {
     name: 'Rustic Green',
     colors: {
-      primary: 'oklch(0.85 0.08 145)',
-      secondary: 'oklch(0.72 0.06 140)',
-      accent: 'oklch(0.80 0.06 142)',
+      primary: 'oklch(0.76 0.08 145)',     // #97c69a
+      secondary: 'oklch(0.42 0.08 155)',   // #336a5b
+      accent: 'oklch(0.88 0.06 140)',      // #b4e8ac
       background: 'oklch(0.97 0.02 85)',
-      foreground: 'oklch(0.72 0.06 140)',
+      foreground: 'oklch(0.42 0.08 155)',  // Using secondary for foreground
       muted: 'oklch(0.90 0.04 145)',
-      border: 'oklch(0.88 0.04 145)',
+      border: 'oklch(0.82 0.06 150)',      // #a6ddc6
     },
   },
   {

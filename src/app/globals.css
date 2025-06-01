@@ -47,41 +47,41 @@
   --radius: 0.625rem;
   /* Green Color Palette - Fresh and Natural */
   --background: oklch(0.97 0.02 85); /* Warm cream background */
-  --foreground: oklch(0.72 0.06 140); /* Medium green text */
+  --foreground: oklch(0.42 0.08 155); /* Medium green text - #336a5b */
   --card: oklch(0.98 0.015 80); /* Slightly warmer card background */
-  --card-foreground: oklch(0.72 0.06 140);
+  --card-foreground: oklch(0.42 0.08 155);
   --popover: oklch(0.98 0.015 80);
-  --popover-foreground: oklch(0.72 0.06 140);
+  --popover-foreground: oklch(0.42 0.08 155);
   /* Primary - Light Green */
-  --primary: oklch(0.85 0.08 145); /* Light green */
+  --primary: oklch(0.76 0.08 145); /* #97c69a */
   --primary-foreground: oklch(0.98 0.015 80); /* Light cream text on green */
   /* Secondary - Medium Green */
-  --secondary: oklch(0.72 0.06 140); /* Medium green */
+  --secondary: oklch(0.42 0.08 155); /* #336a5b */
   --secondary-foreground: oklch(0.95 0.02 85); /* Light text on green */
   /* Muted - Light Green */
   --muted: oklch(0.90 0.04 145); /* Light green/mint */
-  --muted-foreground: oklch(0.65 0.05 140); /* Darker green text */
+  --muted-foreground: oklch(0.32 0.06 155); /* Darker green text */
   /* Accent - Soft Green */
-  --accent: oklch(0.80 0.06 142); /* Soft green accent */
+  --accent: oklch(0.88 0.06 140); /* #b4e8ac */
   --accent-foreground: oklch(0.95 0.02 85);
   --destructive: oklch(0.577 0.245 27.325); /* Keep red for errors */
-  --border: oklch(0.88 0.04 145); /* Green border */
+  --border: oklch(0.82 0.06 150); /* #a6ddc6 */
   --input: oklch(0.92 0.025 145); /* Green input background */
-  --ring: oklch(0.85 0.08 145); /* Light green focus ring */
+  --ring: oklch(0.76 0.08 145); /* Light green focus ring - primary */
   /* Chart colors in green palette */
-  --chart-1: oklch(0.85 0.08 145); /* Light green */
-  --chart-2: oklch(0.72 0.06 140); /* Medium green */
-  --chart-3: oklch(0.80 0.06 142); /* Soft green */
-  --chart-4: oklch(0.65 0.05 138); /* Dark green */
+  --chart-1: oklch(0.76 0.08 145); /* Light green - primary */
+  --chart-2: oklch(0.42 0.08 155); /* Medium green - secondary */
+  --chart-3: oklch(0.88 0.06 140); /* Soft green - accent */
+  --chart-4: oklch(0.32 0.06 155); /* Dark green */
   --chart-5: oklch(0.90 0.04 145); /* Very light green */
   --sidebar: oklch(0.95 0.025 80);
-  --sidebar-foreground: oklch(0.72 0.06 140);
-  --sidebar-primary: oklch(0.85 0.08 145);
+  --sidebar-foreground: oklch(0.42 0.08 155);
+  --sidebar-primary: oklch(0.76 0.08 145);
   --sidebar-primary-foreground: oklch(0.98 0.015 80);
   --sidebar-accent: oklch(0.90 0.04 145);
-  --sidebar-accent-foreground: oklch(0.72 0.06 140);
-  --sidebar-border: oklch(0.88 0.04 145);
-  --sidebar-ring: oklch(0.85 0.08 145);
+  --sidebar-accent-foreground: oklch(0.42 0.08 155);
+  --sidebar-border: oklch(0.82 0.06 150);
+  --sidebar-ring: oklch(0.76 0.08 145);
 }
 
 .dark {
@@ -93,35 +93,35 @@
   --popover: oklch(0.2 0.04 140);
   --popover-foreground: oklch(0.9 0.02 80);
   /* Primary - Bright Green for dark mode */
-  --primary: oklch(0.85 0.08 145); /* Bright green for contrast */
+  --primary: oklch(0.76 0.08 145); /* #97c69a - same as light mode for consistency */
   --primary-foreground: oklch(0.15 0.03 140); /* Dark green text on light green */
   /* Secondary - Medium Green */
-  --secondary: oklch(0.35 0.06 140); /* Medium green */
+  --secondary: oklch(0.35 0.06 155); /* Darker version of #336a5b */
   --secondary-foreground: oklch(0.9 0.02 80); /* Light text */
   /* Muted - Dark Green */
   --muted: oklch(0.25 0.04 140); /* Dark green */
   --muted-foreground: oklch(0.7 0.03 145); /* Muted green text */
   /* Accent - Soft Green */
-  --accent: oklch(0.65 0.06 142); /* Soft green accent */
+  --accent: oklch(0.65 0.06 140); /* Darker version of #b4e8ac */
   --accent-foreground: oklch(0.9 0.02 80);
   --destructive: oklch(0.704 0.191 22.216); /* Keep red for errors */
-  --border: oklch(0.3 0.05 140); /* Green border */
+  --border: oklch(0.3 0.05 150); /* Darker version of #a6ddc6 */
   --input: oklch(0.25 0.04 140); /* Dark green input */
-  --ring: oklch(0.85 0.08 145); /* Light green focus ring */
+  --ring: oklch(0.76 0.08 145); /* Light green focus ring - primary */
   /* Dark mode chart colors */
-  --chart-1: oklch(0.85 0.08 145); /* Bright green */
-  --chart-2: oklch(0.72 0.06 140); /* Medium green */
-  --chart-3: oklch(0.80 0.06 142); /* Soft green */
-  --chart-4: oklch(0.65 0.05 138); /* Dark green */
+  --chart-1: oklch(0.76 0.08 145); /* Bright green - primary */
+  --chart-2: oklch(0.42 0.08 155); /* Medium green - secondary */
+  --chart-3: oklch(0.65 0.06 140); /* Soft green - accent */
+  --chart-4: oklch(0.35 0.06 155); /* Dark green */
   --chart-5: oklch(0.90 0.04 145); /* Very light green */
   --sidebar: oklch(0.18 0.035 140);
   --sidebar-foreground: oklch(0.9 0.02 80);
-  --sidebar-primary: oklch(0.85 0.08 145);
+  --sidebar-primary: oklch(0.76 0.08 145);
   --sidebar-primary-foreground: oklch(0.15 0.03 140);
   --sidebar-accent: oklch(0.25 0.04 140);
   --sidebar-accent-foreground: oklch(0.9 0.02 80);
-  --sidebar-border: oklch(0.3 0.05 140);
-  --sidebar-ring: oklch(0.85 0.08 145);
+  --sidebar-border: oklch(0.3 0.05 150);
+  --sidebar-ring: oklch(0.76 0.08 145);
 }
 
 @layer base {
@@ -148,21 +148,21 @@
 
   .rustic-button-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
-    background: oklch(0.85 0.08 145);
-    box-shadow: 0 2px 4px oklch(0.72 0.06 140 / 0.2);
+    background: oklch(0.76 0.08 145);
+    box-shadow: 0 2px 4px oklch(0.42 0.08 155 / 0.2);
   }
 
   .rustic-button-secondary {
     @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors;
-    background: oklch(0.72 0.06 140);
+    background: oklch(0.42 0.08 155);
   }
 
   .rustic-text-gold {
-    color: oklch(0.85 0.08 145);
+    color: oklch(0.76 0.08 145);
   }
 
   .rustic-text-brown {
-    color: oklch(0.72 0.06 140);
+    color: oklch(0.42 0.08 155);
   }
 
   /* Color Customizer Styles */
@@ -176,7 +176,7 @@
 
   .color-customizer-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 25px oklch(0.72 0.06 140 / 0.3);
+    box-shadow: 0 8px 25px oklch(0.42 0.08 155 / 0.3);
   }
 
   .color-customizer-button:active {
@@ -200,7 +200,7 @@
     pointer-events: none;
     transition: opacity 0.2s ease;
     border: 1px solid var(--border);
-    box-shadow: 0 4px 12px oklch(0.72 0.06 140 / 0.15);
+    box-shadow: 0 4px 12px oklch(0.42 0.08 155 / 0.15);
   }
 
   .color-customizer-button:hover::before {
@@ -233,6 +233,6 @@
   }
 
   .rustic-border {
-    border-color: oklch(0.88 0.04 145);
+    border-color: oklch(0.82 0.06 150);
   }
 }

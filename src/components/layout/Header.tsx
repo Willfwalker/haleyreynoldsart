@@ -17,9 +17,6 @@ import {
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Shop', href: '/shop' },
-  { name: 'Stickers', href: '/shop/stickers' },
-  { name: 'Bookmarks', href: '/shop/bookmarks' },
-  { name: 'Paintings', href: '/shop/paintings' },
   { name: 'Commissions', href: '/commissions' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
