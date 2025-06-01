@@ -3,6 +3,7 @@
 import Header from './Header';
 import Footer from './Footer';
 import CartSidebar from '../cart/CartSidebar';
+import ColorCustomizer from '../ui/color-customizer';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -17,6 +18,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
       </main>
       <Footer />
       <CartSidebar />
+      <ColorCustomizer />
     </div>
   );
 }
